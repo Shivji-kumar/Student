@@ -1,0 +1,76 @@
+.App {
+    text-align: center;
+    width:98%;
+    height:98%;
+    margin:1%;
+
+
+  }
+  .navbar {
+    border-bottom: 1px solid #a5a1a2;
+    max-width:90%;
+    display:flex;
+    margin-top:2%;
+    margin-bottom: 2%;
+  }
+  .links{
+    margin-left:auto;
+    display:flex;
+    align-items: center;
+    fontsize: 25px;
+
+  }
+  h1{
+    color:#4439a7;
+    margin-left:0px 20px;
+  }
+  .link{
+    color:pink;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  .link:hover{
+    color:blue;
+  }
+  .headerStyle{
+    border: 1px solid black;
+    background-color:#61dafb;
+
+  }
+  .homeStyle{
+    border: 1px solid black;
+    background-color: #cca0bf;
+
+  }
+  .homeStyle{
+    border:1px solid black;
+    height:50%;
+    margin:50%;
+
+  }
+  .homeTableStyle{
+    border:1px solid green;
+    display:1px inline-block;
+    margin: 1px;
+    width: 64%;
+    overflow-y: scroll;
+
+  }
+  .footerStyle{
+    border:1px solid black;
+    background-color:#a5a1a2;
+  }
+  .resetButtonStyle{
+    margin:'5px';
+    padding:'3px';
+    font-size: '25px';
+    background-color: 'red';
+    border-radius:'8px';
+  }
+  .submitButtonStyle{
+    margin:'5px';
+    padding:'3px';
+    font-size: '25px';
+    background-color: 'green';
+    border-radius: '8px';
+  }
