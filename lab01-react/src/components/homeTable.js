@@ -2,14 +2,24 @@ import React from 'react';
 import Student from './student'
 
 function HomeTable() {
+  var students =[
+    {name: "Pragya", marks:"95", mobile:"958464685"},
+    {name: "Shivji", marks:"90", mobile:"900464685"},
+    {name: "Radhe", marks:"92", mobile:"958464600"},
+    {name: "Intekhab", marks:"85", mobile:"958460085"},
+    {name: "Nabil", marks:"89", mobile:"958462285"},
+
+  ];
+
+  const studentList =students.map((student)=>
+  <studnet name={students[0].name} marks={students[0].marks} mobile={students[0].mobile}/>
+  );
   return (
     <div className="homeTableStyle">
-      <Student name="Pragya" marks="90" mobile="+91 12345678"/>
-      <Student name="Shivji" marks="85" mobile="+91 12005678"/>
-      <Student name="Pragya" marks="88" mobile="+91 123554678"/>
-
+      {studentList}
     </div>
-  )
+
+  );
 }
 
 export default HomeTable;
