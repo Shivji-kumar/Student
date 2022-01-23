@@ -10,7 +10,7 @@ function HomeForm() {
     email:'',
     enrollmentNo:'',
     mobile:'',
-    marks:'',
+    marks:''
   };
 
   const [student, setStudent]= useState(empty_Student);
@@ -21,7 +21,7 @@ function HomeForm() {
   const resetHandler =()=>{
     setStudent(empty_Student);
   }
-  constchangeHandler =(event)=>
+  const changeHandler =(event)=>
 {
   console.log("field Name: "+event.target.name);
   console.log("field Value: "+event.target.value);
@@ -30,11 +30,12 @@ function HomeForm() {
 
 }
 
-return (<div className="homeFormStyle">
+return (
+   <div className="homeFormStyle">
   <div style={{minHeight:'700px'}}>
     <h1>Name: <input type="text" id="studentName" name='name' value={student.name} onChange={(event)=>{changeHandler(event)}}/></h1>
     <h1>Email: <input type="text" id="studentEmail" name='email' value={student.email} onChange={(event)=>{changeHandler(event)}}/></h1>
-    <h1>E. Number: <input type="text" id="studentEnrollment" name='enrollmentNo' value={student.enrollment} onChange={(event)=>{changeHandler(event)}}/></h1>
+    <h1>E.Number: <input type="text" id="studentEnrollmentNo" name='enrollmentNo' value={student.enrollmentNo} onChange={(event)=>{changeHandler(event)}}/></h1>
     <h1>Mobile: <input type="text" id="studentMobile" name='mobile' value={student.mobile} onChange={(event)=>{changeHandler(event)}}/></h1>
     <h1>Marks: <input type="text" id="studentMarks" name='marks' value={student.marks} onChange={(event)=>{changeHandler(event)}}/></h1>
     {/*</div>
